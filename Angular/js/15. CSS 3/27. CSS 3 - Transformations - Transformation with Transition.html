@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>CSS 3 - Transformations - with Transition</title>
+	</head>
+    <body>
+
+		<h3>CSS 3 Transformations - Transformation with Transition</h3>
+	
+	    <div class="div1">Hello</div>
+
+        <style type="text/css">
+
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 25px;
+			}
+
+            div 
+			{
+                width: 200px;
+                height: 200px;
+                background-color: #00CCFF;
+                margin-left: 150px;
+                cursor: pointer;
+                box-shadow: 10px 10px 10px 10px #ff0000;
+                -moz-box-shadow: 10px 10px 10px 10px #ff0000;
+                -webkit-box-shadow: 10px 10px 10px 10px #ff0000;
+            }
+            .div1 
+			{
+
+                transition: transform 0.8s;
+                -moz-transition: -moz-transform 0.8s;
+                -webkit-transition: -webkit-transform 0.8s;
+            }
+
+			.div1:hover 
+			{
+				background-color: #0099FF;
+
+				transform: scale(1.5);
+				-moz-transform: scale(1.5);
+				-webkit-transform: scale(1.5);
+			}
+        </style>		
+    </body>	
+</html>

@@ -1,0 +1,15 @@
+Page Loading in Browser:
+
+1> When a page is requested over HTTP first the HTML skeleton is received by the browser. At this time nothing is displayed to the user.
+
+2> Based on what is in the HTML skeleton some more additional requests are sent out for the resources (external JavaScript,css,images etc)
+
+3> The browser waits until it receives a HTTP status code for the script and css resources.
+
+4> Once the HTTP status code for the css and JavaScript is received, only then the browser starts loading the document top to bottom, executing whatever embedded JavaScript it encounters on the way.
+
+5> If the embedded JavaScript on the top refers to an HTML element on the bottom, the JavaScript will fail.
+
+6> Once the entire document finishes loading, then the jquery event $(document).ready is fired. (That is if I am using JQuery)
+
+7> The browser does not wait for resources other than scripts and css, so resources like images could get loaded later after the page is displayed to the user.

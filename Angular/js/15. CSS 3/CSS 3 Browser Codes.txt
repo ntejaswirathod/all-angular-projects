@@ -1,0 +1,3 @@
+moz	=	mozilla firefox
+webkit	=	chrome and safari
+o	=	opera

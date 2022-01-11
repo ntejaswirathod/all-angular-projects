@@ -1,0 +1,11 @@
+body onload event (vs) $(document.ready(...))
+======================================
+
+
+1) body onload event
+	the load event (also called as "onload") on the window and/or body element will fire once all the content of the page has been loaded -- this includes all images, scripts, etc... everything.
+
+2) $(document.ready(...)
+	In contrast, jquery's $(document).ready(...) function will use a browser-specific mechanism to ensure that your handler is called as soon as possible after the HTML/XML dom is loaded and accessible. This is the earliest point in the page load process where you can safely run script that intends to access elements in the page's html dom. This point arrives earlier (often much earlier) than the final load event, because of the additional time required to load secondary resources (like images, and such).
+
+Note: We can have multiple document.ready() in a page but Body.Onload() event cannot.

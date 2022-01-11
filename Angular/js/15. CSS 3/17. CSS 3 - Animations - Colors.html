@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Animations - Colors</title>
+		<style type="text/css">
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			div
+			{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				
+				animation: Animation1 10s;
+				-moz-animation: Animation1 10s; /* Firefox */
+				-webkit-animation: Animation1 10s; /* Safari and Chrome */
+				-o-animation: Animation1 10s; /* Opera */
+			}
+
+			@keyframes Animation1
+			{
+				0%   { background-color: red; }
+				25%  { background-color: yellow; }
+				50%  { background-color: blue; }  
+				100% { background-color: green; }
+			}
+
+			@-moz-keyframes Animation1 /* Firefox */
+			{
+				0%   { background-color: red; }
+				25%  { background-color: yellow; }
+				50%  { background-color: blue; }  
+				100% { background-color: green; }
+			}
+
+			@-webkit-keyframes Animation1 /* Safari and Chrome */
+			{
+				0%   { background-color: red; }
+				25%  { background-color: yellow; }
+				50%  { background-color: blue; }  
+				100% { background-color: green; }
+			}
+
+			@-o-keyframes Animation1 /* Opera */
+			{
+				0%   { background-color: red; }
+				25%  { background-color: yellow; }
+				50%  { background-color: blue; }  
+				100% { background-color: green; }
+			}			
+		</style>
+	</head>	
+	<body>
+		<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+		<div></div>
+	</body>	
+</html>

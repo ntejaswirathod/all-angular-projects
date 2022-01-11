@@ -1,0 +1,7 @@
+Old:						New:
+<div id="header">		<header>
+<div id="nav">			<nav>
+<div id="leftcol">		<section id="leftcol">
+<div id="pagecontent>	        <section id="pagecontent">
+<div id="footer">	        <footer>
+<div id="rightcol">		<aside>

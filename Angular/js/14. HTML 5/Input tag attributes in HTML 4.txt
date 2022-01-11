@@ -1,0 +1,9 @@
+Attributes of <input> tag in HTML 4:
+	<input type="text" />
+	<input type="text" value="Some default here" />
+	<input type="text" maxlength="40" />
+	<input type="text" tabindex="10" />
+	<input type="text" readonly="readonly" />
+	<input type="button" disabled="disabled" />
+	<input type="text" title="Some tooltip here" />
+	<input type="checkbox" checked="checked" />

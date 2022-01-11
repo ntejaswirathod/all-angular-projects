@@ -1,0 +1,15 @@
+var mycar =
+		{
+			"CarModel": "Honda City",
+			"CarColor": "red",
+			"CarYear": 2015
+		};
+
+
+var cars = 
+		[
+			{ "CarModel": "Honda City", "CarColor": "Red" },
+			{ "CarModel": "Hyundai Santa", "CarColor": "Gray" },
+			{ "CarModel": "Benz B Class", "CarColor": "Black" },
+			{ "CarModel": "Skoda Rapid", "CarColor": "White" }
+		];

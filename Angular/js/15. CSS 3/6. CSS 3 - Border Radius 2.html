@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CSS 3 - Border Radius</title>
+	</head>
+	<body>
+		
+		<input type="text">
+		<input type="text">
+
+		<style>
+			body, input
+			{
+				font-family: 'Segoe UI';
+				font-size: 23px;
+			}
+			input 
+			{
+				border: 2px solid #a1a1a1;
+				padding: 5px;
+				background-color: green;
+				color: white;
+
+				border-radius: 25px; /* IE 9+ and Firefox 4+ */
+				-moz-border-radius: 25px; /* Firefox 1, 2, 3 */
+				-webkit-border-radius: 25px; /* Chrome and Safari */
+			}
+		</style>
+	</body>
+</html>

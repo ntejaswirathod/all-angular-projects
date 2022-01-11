@@ -1,0 +1,6 @@
+Showing the element from a different visual dimension is called 'Transformation' (2d transformations).
+
+<p>1) Rotate transformation</p>
+<p>2) Scale transformation</p>
+<p>3) Skew transformation</p>
+<p>4) Translate transformation</p>

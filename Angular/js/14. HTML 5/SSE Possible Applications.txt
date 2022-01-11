@@ -1,0 +1,9 @@
+SSE - Possible Applications:
+
+A few simple examples of applications that could make use of Server-Sent Events:
+
+    1) A real-time chart of streaming stock prices.
+
+    2) Real-time news coverage of an important event (posting links, tweets, and images)
+
+    3) A monitor for server statistics like uptime, health, and running processes

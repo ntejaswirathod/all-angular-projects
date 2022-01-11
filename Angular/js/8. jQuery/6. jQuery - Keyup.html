@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>jQuery - keyup</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		Username:
+		<input type="text" id="textbox1">
+		
+		<div id="div1">div1</div>
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#textbox1").keyup(fun1);
+
+			function fun1()
+			{
+				var s = $("#textbox1").val();
+				var msg = "Hai " + s;
+				$("#div1").html(msg);
+			}
+		</script>
+	</body>
+</html>

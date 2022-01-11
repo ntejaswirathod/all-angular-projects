@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>jQuery - hover</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+			#div1
+			{
+				width: 200px;
+				height: 200px;
+				background-color: #00ff99;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="div1">
+			hover me
+		</div>
+
+		<span id="span1" style="color:blue">span1</span>
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#div1").hover(fun1, fun2);
+
+			$("body").mousemove(fun3);
+
+			function fun1()
+			{
+				$(this).html("Thanx");
+			}
+
+			function fun2()
+			{
+				$(this).html("hover me");
+			}
+
+			function fun3(event)
+			{
+				var x = event.pageX;
+				var y = event.pageY;
+				var msg = x + ", " + y;
+				$("#span1").html(msg);
+			}
+		</script>
+	</body>
+</html>

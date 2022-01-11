@@ -1,0 +1,6 @@
+http://www.w3schools.com/
+http://jquery.com/
+http://jqueryui.com/
+http://jquerymobile.com/
+http://learn.jquery.com/
+http://www.codecademy.com/tracks/jquery

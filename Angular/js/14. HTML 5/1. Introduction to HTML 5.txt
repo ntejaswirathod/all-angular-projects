@@ -1,0 +1,31 @@
+HTML 5
+=====
+
+	- HTML 5 is the latest version of HTML.
+
+			HTML 4		=	1999
+			HTML 5		=	2012
+	
+	- HTML 5 has many new features:
+		
+		- HTML 5 New Input Types
+		
+		- HTML 5 New Input Attributes
+
+		- HTML 5 New tags like <datalist>, <meter>, <progress>, <details>, <summary>, <audio>, <video>, <article>, <section>, <header>, <footer>, <nav>, <figure>, <figcaption>, <output>
+
+		- HTML 5 Drag and drop
+
+		- HTML 5 Offline Applications
+
+		- HTML 5 Web Workers
+
+		- HTML 5 Server Sent Events
+
+		- HTML 5 Geo Location
+
+
+================================================
+
+
+https://html5test.com/

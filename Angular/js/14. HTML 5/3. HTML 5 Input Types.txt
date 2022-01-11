@@ -1,0 +1,13 @@
+Input types in HTML 5:
+
+	1)	<input type="color">
+	2)	<input type="date">
+	3)	<input type="time">
+	4)	<input type="datetime-local">
+	5)	<input type="month">
+	6)	<input type="week">
+	7)	<input type="search">
+	8)	<input type="number">
+	9)	<input type="range">
+	10)	<input type="email">
+	11)	<input type="url">

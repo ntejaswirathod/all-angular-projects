@@ -1,0 +1,60 @@
+jQuery
+--------
+
+	- It is a "JavaScript library" or "JavaScript framework".
+		
+	framework = collection of many languages
+	jQuery = html + css + javascript
+
+	 - JavaScript is "lengthy code".
+
+	- "jQuery" is developed by "jQuery foundation".
+
+	- "jQuery foundation" is a group of experts. They verify all the common requirements of web developers and they create a set of re-usable functions.
+
+	- "jQuery" is light-weight.
+
+	- "jQuery" library file size is less than 100 kb. So "jQuery" file will be loaded faster into browser memory at run time & runs on the client side. jQuery is completely client-side.
+
+	- "jQuery" is open source (free to use).
+
+	- "jQuery" is cross-browser compatible (pre-tested in all the browsers).
+	
+
+Versions of jQuery:
+-------------------
+
+1. jQuery 1.x (first generation)	:	Works in all browsers
+
+							Google Chrome
+							Mozilla Firefox
+							Microsoft Internet Explorer 6, 7, 8, 9, 10, 11
+							Opera
+							Safari
+							Android browser
+
+2. jQuery 2.x (second generation) :  Works in following browsers
+
+							Google Chrome
+							Mozilla Firefox
+							Microsoft Internet Explorer 9, 10, 11
+							Opera
+							Safari
+							Android browser
+
+================================================
+
+
+Types of jquery library files:
+
+	1. uncompressed (development)
+		with comments, line breaks, spaces, long variable names
+
+	2. compressed (production)
+		no comments, no line breaks, no spaces, with short variable names
+
+================================================
+
+
+https://jquery.com/
+Download jquery

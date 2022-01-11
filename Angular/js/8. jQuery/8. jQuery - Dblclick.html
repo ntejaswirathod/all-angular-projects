@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>jQuery - dblclick</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="div1" style="background-color:skyblue; font-size:30px">Double Click me</div>
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#div1").dblclick(fun1);
+
+			function fun1()
+			{
+				var msg = "Thanx for double clicking me";
+				$("#div1").html(msg); //setting html
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>jQuery - json example 5</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1>json example 5</h1>
+
+		<div id="div1"></div>
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			
+			var Departments =
+			[
+				{ DeptNo: 10, DeptName: "Accounting", Loc: "New York", Employees: [
+					{ EmpID: 1, EmpName: "ab" },
+					{ EmpID: 2, EmpName: "cd" },
+					{ EmpID: 3, EmpName: "ef" }
+				]  },
+
+				{ DeptNo: 20, DeptName: "Sales", Loc: "New Delhi", Employees: [
+					{ EmpID: 4, EmpName: "gh" },
+					{ EmpID: 5, EmpName: "ij" }
+				]  },
+
+				{ DeptNo: 30, DeptName: "R&D", Loc: "New Mumbai", Employees: [
+					{ EmpID: 6, EmpName: "kl" },
+					{ EmpID: 7, EmpName: "mn" },
+					{ EmpID: 8, EmpName: "op" },
+					{ EmpID: 9, EmpName: "qr" }
+				]  }
+
+			];
+
+
+			var temp = "";
+
+			$(function(){
+				
+				for (i=0; i<Departments.length; i++)
+				{
+					temp += "<p>" + Departments[i].DeptNo + ", " + Departments[i].DeptName + ", " + Departments[i].Loc + "</p>";
+		
+					temp += "<table border='1' cellpadding='4px'>";
+
+					for (j=0; j<Departments[i].Employees.length; j++)
+					{
+						temp += "<tr>";
+						temp += "<td>" + Departments[i].Employees[j].EmpID + "</td>";
+						temp += "<td>" + Departments[i].Employees[j].EmpName + "</td>";
+						temp += "</tr>";
+					}
+
+					temp += "</table>";
+				}
+
+				$("#div1").html(temp);
+			});
+
+		</script>
+
+	</body>
+</html>

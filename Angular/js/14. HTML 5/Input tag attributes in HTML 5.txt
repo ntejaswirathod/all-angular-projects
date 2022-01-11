@@ -1,0 +1,16 @@
+Attributes of <input> tag in HTML 5:
+
+	1) placeholder
+	2) required
+	3) pattern
+	4) min
+	5) max
+	6) novalidate
+	7) formaction
+	8) formmethod
+	9) formtarget
+	10) form
+	11) multiple
+	12) step
+	13) autocomplete
+	14) autofocus

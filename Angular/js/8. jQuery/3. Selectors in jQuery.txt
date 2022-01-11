@@ -1,0 +1,281 @@
+Selectors in jQuery:
+------------------------
+
+	- "Selector" is a syntax to select.
+
+	- After selecting the desired elements, we can call any jquery function.
+
+
+1. Tag selector:
+
+	It selects all instances of specified tag.
+
+	Syntax:  $("tag")
+
+
+2. ID selector:
+
+	It selects a tag based on the id.
+
+	Syntax:  $("#id")
+
+
+3. Class selector:
+
+	It selects few tags based on the css class name.
+
+	Syntax:  $(".class")
+
+
+4. Grouping selector:
+
+	It selects multiple tags.
+
+	Syntax:  $("tag1,tag2,tag3,...")
+
+
+5. Child selector (or) Descendent selector:
+
+	It selects all child tags (including grand children) of a parent tag.
+
+	Syntax:  $("parenttag childtag")
+
+
+6. Direct Child selector (or) Direct Descendent selector:
+
+	It selects all direct child tags (excluding grand children) of a parent tag.
+
+	Syntax:  $("parenttag>childtag")
+
+
+7. Compound selector:
+
+	It selects specified tag that has specified css class.
+
+	Syntax:  $("tag.classname")
+
+
+8. Adjacent Sibling selector:
+
+	It selects all the tag2, which are next siblings of tag1.
+
+	Syntax:  $("tag1~tag2")
+
+
+9. Adjacent One Sibling selector:
+
+	It selects only next one tag2, which is sibling of tag1.
+
+	Syntax:  $("tag1+tag2")
+
+
+		Siblings:
+
+			<tag1></tag1>
+			<tag2></tag2>
+
+				Now tag1 and tag2 are siblings.
+
+		Children:
+
+			<tag1>
+				<tag2></tag2>
+			</tag1>
+
+				Now tag2 is the child of tag1.
+
+
+
+10. :first filter:
+
+	It selects only first tag.
+
+	Syntax:  $("p:first")
+
+
+11. :last filter:
+
+	It selects only last tag.
+
+	Syntax:  $("tag:last")
+
+
+12. :eq filter:
+
+	It selects only specific tag, based on the index. Index starts from zero (0).
+
+	Syntax:  $("tag:eq(index)")
+
+
+13. eq function:
+
+	Same as eq filter.
+
+	Syntax:  $("tag").eq(index)
+
+
+14. :even filter:
+
+	It selects all the even tags. (based on index).
+
+	Syntax:  $("tag:even")
+
+
+15. :odd filter:
+
+	It selects all the odd tags. (based on index).
+
+	Syntax:  $("tag:odd")
+
+
+16. :gt filter:
+
+	It selects all tags, which index is greater than specified index.
+
+	Syntax:  $("tag:gt(index)")
+
+
+17. :lt filter:
+
+	It selects all tags, which index is less than specified index.
+
+	Syntax:  $("tag:lt(index)")
+
+
+18. :not filter:
+
+	It selects all tags, except the specified tag.
+
+	Syntax:  $("tag:not(selector)")
+
+
+19. attribute selector - equal to:
+
+	It selects all tags, that has specified attribute, which value is equal to specified value.
+
+	Syntax:  $("tag[attribute='value']")
+
+
+20. attribute selector - not equal to:
+
+	It selects all tags, that has specified attribute, which value is not equal to specified value.
+
+	Syntax:  $("tag[attribute!='value']")
+
+
+21. attribute selector - starts with:
+
+	It selects all tags, that has specified attribute, which value is starts with  specified value.
+
+	Syntax:  $("tag[attribute^='value']")
+
+
+22. attribute selector - ends with:
+
+	It selects all tags, that has specified attribute, which value is ends with  specified value.
+
+	Syntax:  $("tag[attribute$='value']")
+
+
+23. attribute selector - contains:
+
+	It selects all tags, that has specified attribute, which value contains specified value.
+
+	Syntax:  $("tag[attribute*='value']")
+
+
+24. contains:
+
+	It selects all tags, that has specified content.
+
+	Syntax:  $("tag:contains('content')")
+
+
+25. has:
+
+	It selects all tags, that has child elements that matches with specified selector.
+
+	Syntax:  $("tag:has('selector')")
+
+
+26. :empty filter
+
+	It is used to get empty tags, which inner html is empty.
+
+		<tag></tag>
+
+
+27. :first-child filter
+
+	It is used to select the first child of each parent.
+
+
+28. :last-child filter
+
+	It is used to select the last child of each parent.
+
+
+29. :nth-child filter
+
+	It is used to select the n'th child of each parent. 'n' can be any number. Index starts from '1'.
+
+
+30. :only-child
+
+	It is used to select the element, which is only one child of its parent.
+
+
+31. parent()
+
+	It is used to select the parent element of current element.
+
+
+32. siblings()
+
+	It is used to select all the siblings elements of current element.
+
+
+33. next()
+
+	It is used to select the next sibling element of current element.
+
+
+34. prev()
+
+	It is used to select the previous sibling element of current element.
+
+
+35. children()
+
+	It is used to select all the children elements of current element.
+
+
+36. :text
+
+	It is used to select all <input type="text">
+
+
+37. :password
+
+	It is used to select all <input type="password">
+
+
+38. :checkbox
+
+	It is used to select all <input type="checkbox">
+
+
+39. :radio
+
+	It is used to select all <input type="radio">
+
+
+40. :file
+
+	It is used to select all <input type="file">
+
+
+41. :button
+
+	It is used to select all <input type="button">
+

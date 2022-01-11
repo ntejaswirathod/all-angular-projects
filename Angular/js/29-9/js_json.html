@@ -1,0 +1,40 @@
+<script>
+
+    // var js_obj={"prd_name":"Laptop" , "prd_id":3004,"prd_count":340}
+
+    // document.write("js ...." + js_obj)
+
+    // document.write("</br>")
+
+    // var json_obj=JSON.stringify(js_obj)
+
+    // document.write("json..." + json_obj)
+//     {
+// 	"prd_name": "Laptop",
+// 	"prd_id": 3004,
+// 	"prd_count": 340
+//   }
+
+var json_obj=' {"prd_name":"Laptop" , "prd_id":3004,"prd_count":340} '
+//document.write(json_obj)
+document.write("</br>")
+var js_obj=JSON.parse(json_obj)
+//document.write(js_obj)
+document.write("</br>")
+
+// document.write("prd_name is...." + js_obj.prd_name)
+// document.write("</br>")
+// document.write("prd_id is...." + js_obj.prd_id)
+// document.write("</br>")
+// document.write("prd_count is...." + js_obj.prd_count)
+
+document.write("<ul> <li> " +  js_obj.prd_name + "  </li> <li> " +  js_obj.prd_id + "  </li> <li> " +  js_obj.prd_count + "  </li>  </ul>")
+
+
+
+
+
+
+
+
+</script>

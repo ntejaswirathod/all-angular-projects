@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>jQuery - keypress</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		Person Name:
+		<input type="text" id="textbox1">
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#textbox1").keypress(fun1);
+
+			function fun1(event)
+			{
+				//event = browser given information
+
+				var ch = event.which; //ascii value of currently pressed character
+
+				if ( (ch >=97 && ch <=122) || (ch >=65 && ch <= 90) || (ch == 32) || (ch == 8) )
+				{
+					//accept the character automatically
+				}
+				else
+				{
+					event.preventDefault(); //reject the character
+				}
+			}
+		</script>
+	</body>
+</html>

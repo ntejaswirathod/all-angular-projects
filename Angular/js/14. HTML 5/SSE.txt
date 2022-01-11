@@ -1,0 +1,8 @@
+			SSE
+		(Server Sent Events)
+		=================
+
+ - It is used to get continous updates from server & display the updated information on the page, while running the page on the browser.
+
+ - Ex:   Cricket score board, Share market updates etc.
+

@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Photo Slide Show</title>
+	</head>
+	<body>
+
+		<img src="img1.jpg" width="120px" id="myimage">
+		<br>
+
+		<input type="button" value="Previous" id="button1">
+		<input type="button" value="Next" id="button2">
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#button1").click(fun1);
+			$("#button2").click(fun2);
+
+			var allimages = [ "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img9.jpg" ];
+			var c = 0;
+
+			function fun1()
+			{
+				c--;
+				if (c == -1)
+				{
+					c = 0;
+				}
+				var i = $("#myimage");
+				i.attr("src", allimages[c]);
+			}
+
+			function fun2()
+			{
+				c++;
+				if (c == allimages.length)
+				{
+					c = allimages.length - 1;
+				}
+				var i = $("#myimage");
+				
+				i.attr("src", allimages[c]);
+			}
+		</script>
+	</body>
+</html>

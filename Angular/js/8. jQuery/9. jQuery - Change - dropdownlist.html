@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>jQuery - change</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		Country:<br>
+
+		<select id="DropDownList1">
+			<option>Please Select</option>
+			<option>India</option>
+			<option>China</option>
+			<option>United Kingdom</option>
+			<option>United States</option>
+		</select>
+
+		<br>
+
+		<span id="span1" style="color:green">span1</span>
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#DropDownList1").change(fun1);
+
+			function fun1()
+			{
+				var s = $("#DropDownList1").val();
+				var msg = "You selected: " + s;
+				$("#span1").html(msg);
+			}
+		</script>
+	</body>
+</html>

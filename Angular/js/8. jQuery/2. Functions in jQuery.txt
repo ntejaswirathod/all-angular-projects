@@ -1,0 +1,326 @@
+Functions in jQuery
+-----------------------
+
+I) BASIC FUNCTIONS:
+
+	1. $("selector")
+		
+		$ is a pre-defined function, which is used to select element(s), based on the selector. Ex: id selector, class selector, tag selector.
+	
+
+	2. html()
+
+		It is used to set or get inner html.
+
+	
+	3. val()
+		
+		It is used to set or get value of <input> or <select>
+
+
+	4. show()
+		It is used to show the element in the web page.
+	
+
+	5. hide()
+		It is used to hide the element in the web page.
+	
+
+II) EVENT HANDLING FUNCTIONS:
+
+	6. click(function name)
+		It is used to handle the "click" event.
+		"click" event executes when the user clicks on the element.
+
+	7. dblclick(function name)
+		It is used to handle the "dblclick" event.
+		"dbllick" event executes when the user double clicks on the element.
+
+	8. mouseover(function name)
+		It is used to handle the "mouseover" event.
+		"mouseover" event executes when the user move the mouse pointer from outside to inside the element.
+
+	9. mouseout(function name)
+		It is used to handle the "mouseout" event.
+		"mouseout" event executes when the user move the mouse pointer from inside to outside the element.
+	
+	10. mousemove(function name)
+		It is used to handle the "mousemove" event.
+		"mousemove" event executes when the user move the mouse pointer across the element.
+
+	11. focus(function name)
+		It is used to handle the "focus" event.
+		"focus" event executes when the cursor enter into the element.
+	
+	12. blur(function name)
+		It is used to handle the "blur" event.
+		"blur" event executes when the cursor go out of the element.
+
+	13. hover(function1, function2)
+		It is used to handle the "mouseover" and "mouseout" events.
+
+	14. keyup(function name)
+		It is used to handle the "keyup" event.
+		"keyup" event executes when the user press any key on the keyboard (after accepting the character).
+	
+	15. keypress(function name)
+		It is used to handle the "keypress" event.
+		"keypress" event executes when the user press any key on the keyboard (after before the character).
+	
+	16. change(function name)
+		It is used to handle the "change" event.
+		checkbox / radiobutton / dropdownlist
+
+	17. bind("event name", function name)
+		It is used to handle one or more events at-a-time.
+
+		Ex: cut copy paste contextmenu
+	
+	18. one("event name", function name)
+		It is just like bind. It executes the function only once.
+
+
+
+III) EFFECTS FUNCTIONS:
+
+	19. fadeOut(milli sec)
+		It is used to hide the element gradually.
+
+	20. fadeIn(milli sec)
+		It is used to show the element gradually.
+
+	21. slideUp(milli sec)
+		It is used to hide the element gradually.
+
+	22. slideDown(milli sec)
+		It is used to show the element gradually.
+
+	23. hide(milli sec)
+		It is used to hide the element gradually.
+
+	24. show(milli sec)
+		It is used to show the element gradually.
+
+	25. fadeToggle(milli sec)
+		fade in / fade out
+
+	26. slideToggle(milli sec)
+		slide down / slide up
+
+	27. toggle(milli sec)
+		show / hide
+	
+	28. fadeTo(milli sec, opacity)
+		changes the opacity in specified milli seconds.
+
+
+IV) MANIPULATING CSS:
+
+	29. addClass("class name")
+		It applies the css class name to the element.
+	
+	30. removeClass("class name")
+		It removes the css class name from the element.
+	
+	31. toggleClass("class name")
+		add class / remove class
+
+	32. hasClass("class name")
+		true: class is applied to the element.
+		false: class is not applied to the element.
+
+	33. css("property name", "value")
+		sets the css property to the element.
+
+	34. css( { "property name": "value", "property name": "value", "property name": "value" } )
+		sets multiple css properties to the element.
+
+	35. css("property name")
+		gets the value of specified css property.
+
+
+V) MANIPULATING ATTRIBUTES:
+
+	36. attr("attribute name", "value")
+		sets the attribute value to the element.
+
+	37. attr("attribute name")
+		gets the attribute value from the element.
+
+	38. attr( { "attribute name": "value", "attribute name": "value", "attribute name": "value", ... } )
+		sets multiple attributes at-a-time.
+
+	39. removeAttr("attribute name")
+		removes the attribute value from the element.
+
+
+VI) ANIMATIONS:
+
+	40. animate( { "property name": "value", "property name": "value", "property name": "value" }, milli seconds )
+		Changes the specified css properties gradually, based on the milli seconds.
+
+	41. $(document).ready(fun1);
+		It calls fun1 as soon as the html code execution completed and DOM is ready. It won't wait for image files.
+	
+			$(fun1);
+
+			$(function() {
+				code
+			});
+
+
+VII) MANIPULATING CONTENT IN JQUERY:
+---------------------------------------------------
+
+
+	42. data("variable", value)
+		
+		It is used to store hidden value in the tag. Not for display purpose. Just for programmer maintenance purpose.
+	
+
+	43. html()
+
+		It is used to get the inner html.
+	
+
+	44. html("some text")
+
+		It is used to set (overwrite) the inner html.
+	
+
+	45. text()
+
+		It is used to get the plain text from inner html.
+	
+
+			<parenttag>
+				data <tag>data</tag> <tag>data</tag> data
+			</parenttag>
+
+
+	46. text("some text")
+
+		It is used to set (overwrite) the plain text into inner html.
+
+	
+	47. append("some data")
+
+		It is used to append data to inner html (at the end of inner html).
+
+	
+	48. prepend("some data")
+
+		It is used to prepend data to inner html (at the beginning of inner html).
+
+
+
+Formula #1:
+
+		before
+		<tag>
+			prepend
+			existing data
+			append
+		</div>
+		after
+
+
+
+
+
+	49. before("some data")
+
+		It is used to add data before the starting tag.
+
+	
+	48. after("some data")
+
+		It is used to add data after the ending tag.
+
+
+
+Formulae #2:
+
+		insertBefore
+		<tag>
+			prependTo
+			existing data
+			appendTo
+		</div>
+		insertAfter
+
+
+<parenttag>
+	<tag></tag>
+</parenttag>
+
+
+
+
+	49. insertBefore("selector")
+
+		It is used to add data before the starting tag.
+
+
+	50. prependTo("selector")
+
+		It is used to add data after the starting tag.
+
+
+	51. appendTo("selector")
+
+		It is used to add data before the ending tag.
+
+
+	52. insertAfter("selector")
+
+		It is used to add data after the ending tag.
+
+
+	53. clone().insertBefore("selector")
+
+		It is used to add data before the starting tag.
+
+
+	54. clone().prependTo("selector")
+
+		It is used to add data after the starting tag.
+
+
+	55. clone().appendTo("selector")
+
+		It is used to add data before the ending tag.
+
+
+	56. clone().insertAfter("selector")
+
+		It is used to add data after the ending tag.
+
+
+	57. wrap("<parenttag></parenttag>")
+
+		It is used to parent tag for an existing tag. For each tag, a parent tag will be added.
+
+
+	58. wrapAll("<parenttag></parenttag>")
+
+		For all the tags, a common parent tag will be added.
+
+
+	59. empty()
+
+		It will empty the inner html
+
+	
+			<tag></tag>
+	
+
+	61. remove()
+
+		It will delete the tag.
+
+	
+	62. replaceWith()
+
+		It will overwrite the tag.
+

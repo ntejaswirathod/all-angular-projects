@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>JavaScript - Validations</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+			#span1
+			{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+
+		<form action="http://localhost/serverpage.aspx" id="form1">
+
+			Username (no space):
+			<input type="text" id="txt1" name="username">
+			*
+			<span id="span1"></span>
+			<br>
+
+			<input type="submit">
+
+		</form>
+
+		<script type="text/javascript">
+			document.getElementById("form1").addEventListener("submit", fun1);
+
+			function fun1(event)
+			+
+			{
+				var username = document.getElementById("txt1").value;
+				var b; //valid or invalid
+
+				//Rule 1: Username can't be blank.
+				if (username == "")
+				{
+					document.getElementById("span1").innerHTML = "Please enter username";
+					event.preventDefault(); //invalid
+				}
+
+				//Rule 2: Spaces not allowed in username
+				else if (username.indexOf(" ") >= 0)
+				{
+					document.getElementById("span1").innerHTML = "Spaces not allowed in username";
+					event.preventDefault(); //invalid
+				}
+
+				//valid
+				else
+				{
+					document.getElementById("span1").innerHTML = "";
+				}
+			}
+		</script>
+	</body>
+</html>

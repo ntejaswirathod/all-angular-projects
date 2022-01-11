@@ -1,0 +1,15 @@
+var dept =
+	{
+		"DeptNo": 10,
+		"DeptName": "Accounting",
+		"Loc" : "New York"
+	};
+
+
+var depts = 
+	[
+		{ "DeptNo": 10, "DeptName": "Accounting", "Loc" : "New York" },
+		{ "DeptNo": 20, "DeptName": "Marketing", "Loc" : "New Delhi" },
+		{ "DeptNo": 30, "DeptName": "Operations", "Loc" : "Mumbai" },
+		{ "DeptNo": 40, "DeptName": "Sales", "Loc" : "London" }
+	];

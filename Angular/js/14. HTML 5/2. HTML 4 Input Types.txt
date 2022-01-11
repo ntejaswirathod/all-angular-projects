@@ -1,0 +1,12 @@
+Input types in HTML 4:
+
+	1)	<input type="text">
+	2)	<input type="password">
+	3)	<input type="checkbox">
+	4)	<input type="radio">
+	5)	<input type="file">
+	6)	<input type="hidden">
+	7)	<input type="button">
+	8)	<input type="submit">
+	9)	<input type="reset">
+	10)	<input type="image">

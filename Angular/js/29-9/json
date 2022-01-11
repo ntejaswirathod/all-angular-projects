@@ -1,0 +1,55 @@
+json
+======= 
+
+      javascript object notation
+      json is not programming 
+      json is syntax 
+      json basically using for store and transport data between client and server 
+
+      types of json
+      =============
+      1.object
+      2.array
+
+json obj
+=========== jsonobj starts with  { closed }
+            jsonobj is collection of key:value pairs 
+            key:value pair separated with comma 
+            kay and value seperated with : 
+            last key:value pair do not have comma 
+
+            key must be string type 
+
+            value can be any datatype :number,string,bool,array,object,null
+
+  json obj
+  ========== { "prdname" : "iPhone" , "prd_color" :"white" }
+
+  json array
+  ==========
+
+  [
+{ "prdname" : "iPhone" , "prd_color" :"white" },
+{ "prdname" : "samsung" , "prd_color" :"red" },
+{ "prdname" : "oppo" , "prd_color" :"black" }
+  ]
+
+
+
+json array
+=========== json array starts with  [closed ] 
+            closed is collection of values
+            value seperated with ,
+            last value  do not have comma 
+
+           value can be any datatype :number,string,bool,array,object,null
+
+
+
+
+
+
+
+
+
+

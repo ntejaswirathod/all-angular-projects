@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS 3 - FontFace</title>
+		<style> 
+			body
+			{
+				font-family: 'Segoe UI';
+				font-size: 50px;
+			}
+			@font-face
+			{
+				font-family: PlainBlack;
+				src: url('fonts/PlainBlack/PlainBlack.ttf'),
+					url('fonts/PlainBlack/PlainBlack.woff') format('woff'),
+					url('fonts/PlainBlack/PlainBlack.eot'); /* IE9+ */
+			}
+			div
+			{
+				font-family: PlainBlack;
+			}
+		</style>
+	</head>
+	<body>
+		<div>With CSS3, websites can finally use new and attrative fonts.</div>
+	</body>
+</html>

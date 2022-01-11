@@ -1,0 +1,9 @@
+		Canvas
+		======
+
+ - It is used to draw graphics programmatically.
+
+ - It uses java script code.
+
+ - Real time apps of canvas:
+	* Development of games

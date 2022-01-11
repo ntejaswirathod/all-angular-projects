@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prem </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+  <div id="header">
+
+  </div>
+
+  <div style="text-align:center; color: white;">
+    <h1>Registration Form</h1>
+  </div>
+  <form id="form1">
+    <div id="container">
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="username" pattern="[A-Za-z]{1,20}" required>
+      <span id="user_err" class="error_msg  ">Please enter correct user name</span>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" id="email" required>
+      <span id="email_err" class="error_msg">Please provide a valid email address</span>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" required>
+      <span id="pass_err" class="error_msg">Please enter password more than 6 digits</span>
+
+      <div>
+        <input type="radio" id="male" name="gender" value="M" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="F" required>
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="admin" name="admin" value="admin">
+        <label for="admin">admin</label>
+        <input type="checkbox" id="client" name="client" value="client">
+        <label for="client">client</label><br>
+      </div>
+
+      <label for="phone">Enter your phone number:</label>
+      <input type="tel" id="phone" name="phone">
+      <span id="phone_err" class="error_msg ">Please provide a valid phone number</span>
+
+      <!-- <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lf2rVEcAAAAAN8h96rPZr8W0MklKVHV7tsauBkH"></div> -->
+
+      <button type="submit" class="registerbtn" onclick="formSubmit(event)"> Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+
+    </div>
+  </form>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>

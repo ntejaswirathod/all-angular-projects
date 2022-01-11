@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>jQuery - focus and blur</title>
+		<style type="text/css">
+			body,input
+			{
+				font-family: 'Tahoma';
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		Username:
+		<input type="text" id="TextBox1">
+
+		<span id="span1" style="color:green; display:none">Use letters, numbers and hyphens</span>
+
+		<script type="text/javascript" src="jquery-2.1.4.js">
+		</script>
+
+		<script type="text/javascript">
+			$("#TextBox1").focus(fun1);
+			$("#TextBox1").blur(fun2);
+
+			function fun1()
+			{
+				$("#span1").show();
+			}
+
+			function fun2()
+			{
+				$("#span1").hide();
+			}			
+		</script>
+	</body>
+</html>
